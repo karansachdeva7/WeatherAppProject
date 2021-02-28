@@ -19,13 +19,11 @@ import java.util.*
 class WeatherActivity : AppCompatActivity() {
     val TAG = "WeatherActivity"
     val CITY: String = "Bengaluru,in"
-    val API : String = "54f57856ee1b4341fb2c5c9c674ab265"
+    val API : String = Config.API_KEY
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_weather)
-
-
         weatherTask().execute()
     }
 
