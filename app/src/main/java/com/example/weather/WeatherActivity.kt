@@ -42,7 +42,7 @@ class WeatherActivity : AppCompatActivity() {
                 response = URL("https://api.openweathermap.org/data/2.5/weather?q=$CITY&units=metric&appid=$API").readText(
                     Charsets.UTF_8
                 )
-                Log.d(TAG, "value of response is "+response);
+                Log.d(TAG, "value of response is " + response);
             } catch (e: Exception) {
                 response = null
             }
